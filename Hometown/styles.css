@@ -1,0 +1,94 @@
+:root {
+    --pri-color: #000814;
+    --sec-color: #001d3d;
+    --ter-color: #003566;
+    --cua-color: #ffc300;
+    --qui-color: #ffd60a; 
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+footer {
+    margin-top: 10px;
+    padding: 40px;
+    background-color: var(--pri-color);
+    color: var(--ter-color);
+    text-shadow: 0px 0px 1px var(--sec-color);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#hero {
+    background-image: url("./images/Municipalidad-Nunoa.webp");
+    background-size: cover;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#us {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--sec-color);
+    color: var(--cua-color);
+}
+
+#anfitriom {
+    width: 580px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#tarjeta {
+    padding: 10px;
+    background-color: var(--cua-color);
+    color: var(--ter-color);
+    border-bottom: 5px solid var(--sec-color);
+    box-shadow: 2px 2px 3px var(--pri-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+#founder-img {
+    width: 180px;
+    border: 2px solid var(--sec-color);
+    border-radius: 10px;
+}
+
+#founder-text {
+    padding: 5px 20px;
+}
+
+.bg-text {
+    background-color: var(--qui-color);
+    color: var(--ter-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.img-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--cua-color);
+}
+
+.card {
+    margin: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Digital';
+    src: url(./fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+footer {
+    margin-top: 30px;
+    border-top: 3px dashed #def123;
+    border-bottom: 3px dashed #def123;
+    font-weight: 700;
+    font-size: x-large;
+    background-color: #1B244A;
+    color: #def123;
+}
+
+#Tablero-Marcador {
+    margin: 0px auto;
+    width: 480px;
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+}
+
+#restart {
+    margin: 30px;
+    padding: 10px 20px;
+    background-color: #1B244A;
+    color: #def123;
+}
+
+.title-score {
+    color: white;
+}
+
+.marcador {
+    background-color: black;
+    color: red;
+    font-family: 'Digital';
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.score {
+    font-size: 40px;
+    margin: 1px;
+    padding: 1px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+.btn-group > button {
+    background-color: #1B244A;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    font-family: 'Digital';
+    font-size: 12px;
+    padding: 3px 2px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.btn-group > button:hover {
+    border: 2px solid red;
+    color: red;
+}
+
+.btn-group > button:active {
+    border: 2px solid lightgreen;
+    color: lightgreen;
+}
