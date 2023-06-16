@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    margin-top: 150px;
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.search-input {
+    display: block;
+    margin: 30px auto;
+    width: 530px;
+    line-height: 24px;
+    padding: 10px 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #dfe1e5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}

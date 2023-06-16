@@ -1,0 +1,44 @@
+:root {
+    /* CSS HEX */
+--space-cadet: #28234Aff;
+--english-violet: #3F2D51ff;
+--cool-gray: #8084B6ff;
+--united-nations-blue: #4696DEff;
+--delft-blue: #1E2E62ff;
+}
+
+body {
+    color: var(--united-nations-blue);
+/*    background-image: url("./images/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg"); */
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+.btn {
+    padding: 6px 12px;
+    background-color: var(--united-nations-blue);
+    ;
+    border: none;
+    font-family: 'Space Mono', monospace;
+}
+
+.underline {
+    border-bottom: 4px solid white;
+}
+
+#logo {
+    width: 180px;
+}
+
+#hero {
+    background-image: url("https://media.tenor.com/rSK5eqkGjdwAAAAC/gal%C3%A1xia-girando-orbita.gif");
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    height: 600px;
+}
+
+#title {
+    text-shadow: 0px 0px 4px black;
+}
