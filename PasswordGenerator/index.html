@@ -13,7 +13,17 @@
     <section>
         <h1>Genera una <br> <span>password aleatoria</span></h1>
         <h3>Nunca mas uses una clave insegura</h3>
-        <button onclick="handler_click()">Generar Password</button>
+        <div>
+            <button onclick="handler_click()">Generar Password</button>
+            <fieldset class="option">
+                <legend>Escoja el largo de la clave:</p>
+                <div class="radio-grp">
+                    <input type ="radio" id="eight" name="largoPalabra" value="8"/><label for="eight">8 caracteres</label>
+                    <input type ="radio" id="twelve" name="largoPalabra" value="12" checked/><label for="twelve">12 caracteres</label>
+                    <input type ="radio" id="sixteen" name="largoPalabra" value="16"/><label for="sixteen">16 caracteres</label>        
+                </div>
+            </fieldset>
+        </div>
         <hr >
         <div id="container">
             <div class="rectangle">
