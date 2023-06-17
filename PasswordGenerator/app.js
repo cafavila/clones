@@ -19,7 +19,21 @@ function generateRandomPassword() {
     return randomPassword
 }
 
+function checkLength() {
+    let corta = document.getElementById("eight")
+    let normal = document.getElementById("twelve")
+    let larga = document.getElementById("sixteen")
+    if (corta.checked) {
+        passwordLength = 8
+    } else if (larga.checked) {
+        passwordLength = 16
+    } else if (normal.checked) {
+        passwordLength = 12
+    }
+}
+
 function handler_click() {
+    checkLength()
     const generatedPasswordOne = generateRandomPassword()
     passwordOneEl.textContent = generatedPasswordOne
     //console.log("Here is a random password: ", generatedPasswordOne)
