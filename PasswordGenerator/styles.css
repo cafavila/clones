@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: #1F2937;
+    padding: 40px;
+    width: 550px;
+    height: 550px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Karla', sans-serif;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 2px;
+    font-weight: 200;
+}
+
+span {
+    color: #4ADF86;
+}
+
+button {
+    width: 241px;
+    height: 42px;
+    background-color: #108981;
+    color: white;
+    margin-top: 30px;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    color: #2F3E53;
+}
+
+button:active {
+    background-color: #55F991;
+}
+
+hr {
+    margin: 40px 5px;
+    padding: 0px 40px;
+    border-color: #2F3E53;
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message {
+    text-align: center;
+    background-color: #2F3E53;
+    color: #55F991;
+    width: 70px;
+    height: 20px;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 20px auto;
+}
+
+.rectangle {
+    width: 250px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: #273549;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangle > p {
+    color: #55F991;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.copy-icon {
+    margin: 0;
+    height: 30px;
+}

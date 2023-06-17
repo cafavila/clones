@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@800&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <section>
+        <h1>Genera una <br> <span>password aleatoria</span></h1>
+        <h3>Nunca mas uses una clave insegura</h3>
+        <button onclick="handler_click()">Generar Password</button>
+        <hr >
+        <div id="container">
+            <div class="rectangle">
+                <p id="passwordOne"></p>
+                <svg class="copy-icon" onclick="copy('One')" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                        .st0{display:none;}
+                        .st1{display:inline;}
+                        .st2{opacity:0.2;fill:none;stroke:#000000;stroke-width:5.000000e-02;stroke-miterlimit:10;}
+                    </style><g class="st0" id="grid_system"/><g id="_icons"><path d="M17,3h-6C8.8,3,7,4.8,7,7c-2.2,0-4,1.8-4,4v6c0,2.2,1.8,4,4,4h6c2.2,0,4-1.8,4-4c2.2,0,4-1.8,4-4V7C21,4.8,19.2,3,17,3z    M15,17c0,1.1-0.9,2-2,2H7c-1.1,0-2-0.9-2-2v-6c0-1.1,0.9-2,2-2h1h5c1.1,0,2,0.9,2,2v5V17z M19,13c0,1.1-0.9,2-2,2v-4   c0-2.2-1.8-4-4-4H9c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2V13z"/></g>
+                </svg>
+            </div>
+            <div class="rectangle">
+                <p id="passwordTwo"></p>
+                <svg class="copy-icon" onclick="copy('Two')" style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                    .st0{display:none;}
+                    .st1{display:inline;}
+                    .st2{opacity:0.2;fill:none;stroke:#000000;stroke-width:5.000000e-02;stroke-miterlimit:10;}
+                    </style><g class="st0" id="grid_system"/><g id="_icons"><path d="M17,3h-6C8.8,3,7,4.8,7,7c-2.2,0-4,1.8-4,4v6c0,2.2,1.8,4,4,4h6c2.2,0,4-1.8,4-4c2.2,0,4-1.8,4-4V7C21,4.8,19.2,3,17,3z    M15,17c0,1.1-0.9,2-2,2H7c-1.1,0-2-0.9-2-2v-6c0-1.1,0.9-2,2-2h1h5c1.1,0,2,0.9,2,2v5V17z M19,13c0,1.1-0.9,2-2,2v-4   c0-2.2-1.8-4-4-4H9c0-1.1,0.9-2,2-2h6c1.1,0,2,0.9,2,2V13z"/></g>
+                </svg>
+            </div>
+        </div>
+        <p id="message"></p>
+    </section>
+    <script src="./app.js"></script>
 </body>
 </html>
