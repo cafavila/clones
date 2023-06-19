@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1F1F1F;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    margin: 0;
+    background-color: #6943FF;
+    color: #FFFFFF;
+    text-align: center;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h1 {
+    font-size: 28px;
+}
+
+#magnitud {
+    border: 2px solid #B295FF;
+    background-color: #6943FF;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    width: 117px;
+    font-size: 58px;
+    font-weight: bolder;
+    padding: 6px 3px;
+}
+
+#convertir-btn {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+#convertir-btn:hover {
+    background-color: #B295FF;
+    color: #6943FF;
+}
+
+#convertir-btn:active {
+    background-color: #6943FF;
+    color: #FFFFFF;
+}
+
+#container-convert {
+    background-color: #1F2937;
+}
+
+.container {
+    margin: 50px auto;
+    width: 550px;
+    height: 730px;
+    display: flex;
+    flex-direction: column;
+}
+
+.convert-panel {
+    border-radius: 4px;
+    background-color: #273549;
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.convert-panel > h2 {
+    color: #CCC1FF;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.resultado {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 5px;
+}
