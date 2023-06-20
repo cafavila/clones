@@ -1,5 +1,5 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import {initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
+import {getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
 //    databaseURL: "https://realtime-database-df319-default-rtdb.europe-west1.firebasedatabase.app/"
@@ -28,19 +28,34 @@ function cleanShoppingListEl() {
     shoppingListEl.innerHTML = ""
 }
 
-function appendItemToListShoppingEl(itemValue) {
-    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
+function appendItemToListShoppingEl(item) {
+//    shoppingListEl.innerHTML += `<li>${itemValue}</li>`
+    let itemID = item[0]
+    let itemValue = item[1]
+
+    const newEl = document.createElement("li")
+    newEl.textContent = itemValue
+    newEl.addEventListener("click", function() {
+        let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
+        remove(exactLocationOfItemInDB)
+    })
+
+    shoppingListEl.append(newEl)
 }
 
 onValue(shoppingListInDB, function(snapshot) {
-    let itemsArray = Object.entries(snapshot.val())
+    if (snapshot.exists()) {
+        let itemsArray = Object.entries(snapshot.val())
 
-    cleanShoppingListEl()
-
-    for (let i = 0; i < itemsArray.length; i++) {
-        let currentItem = itemsArray[i]
-        let currentItemId = currentItem[0]
-        let currentItemValue = currentItem[1]
-        appendItemToListShoppingEl(currentItemValue)
+        cleanShoppingListEl()
+    
+        for (let i = 0; i < itemsArray.length; i++) {
+            let currentItem = itemsArray[i]
+            // let currentItemId = currentItem[0]
+            // let currentItemValue = currentItem[1]
+            appendItemToListShoppingEl(currentItem)
+        }    
+    } else {
+        shoppingListEl.innerHTML = "<p>No existen items aqui... aun</p>"
     }
 })
