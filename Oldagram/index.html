@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <title>Oldagram</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img class="logo" src="images/logo.png">
+                <img class="avatar" src="images/user-avatar.png">
+            </header>
+            <main>
+                <section class="post-header">
+                    <img id="avatar" class="avatar" src="" alt="Avatar">
+                    <div class="post-user">
+                        <h2 id="name"></h2>
+                        <p id="location"></p>
+                    </div>
+                </section>
+                <section class="post-img">
+                    <img id="post-img" src="">
+                </section>
+                <section class="post-like">
+                    <div class="icons">
+                        <img class="icon" src="images/icon-heart.png" alt="Like">
+                        <img class="icon" src="images/icon-comment.png" alt="Comment">
+                        <img class="icon" src="images/icon-dm.png" alt="dm">
+                    </div>
+                    <div>
+                        <p><strong id="likes"></strong></p>
+                        <p>
+                            <strong id="username"></strong>
+                            <span id="comentario"></span>
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
