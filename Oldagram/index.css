@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+header img {
+    margin: 10px;
+}
+
+h2, p {
+    margin: 0px;
+}
+
+.logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.container {
+    width: 372px;
+    margin: 0 auto;
+}
+
+.post-header {
+    padding: 10px;
+    display: flex;
+}
+
+.post-user {
+    font-size: 13px;
+    margin: 0px 10px;
+}
+
+.post-img {
+    width: 375px;
+    height: 375px;
+}
+
+.post-img img {
+    width: 100%;
+}
+
+.post-like {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.post-like p {
+    margin: 10px 0px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
