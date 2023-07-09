@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    box-sizing: border-box;
+} 
+
+header {
+    height: 167px;
+    background-image: url('./img/BurgerQueen.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding: 46px;
+    color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 39px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+section {
+    padding: 46px;
+    border-bottom: 1px solid #DEDEDE;
+    height: 140px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20px;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    color: #757575;
+}
+
+#menu {
+    padding: 0 30px;
+}
+
+.container {
+    margin: 0px auto;
+    width: 600px;
+}
+
+.option-element {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.emoji {
+    width: 70px;
+    height: 89px;
+    font-size: 78px;
+    margin: 0;
+    padding: 10px;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    background-color: #FFFFFF;
+}
+
+.add-btn:hover {
+    background-color: #16DB99;
+}
+
+.add-btn:active {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.item-data {
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.item-name {
+    font-size: 28px;
+}
+
+.item-price {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.item-ingredient {
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.hidden {
+    display: none;
+}
+
+.order-btn {
+    background-color: #16DB99;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px 20px;
+}
+
+.order-btn:hover {
+    cursor: pointer;
+}
+
+.order-tittle {
+    text-align: center;
+    margin: 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-item {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li-item a {
+    text-decoration: none;
+    color: #DEDEDE;
+    margin-left: 5px;
+}
+
+.modal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFFFFF;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 10px;
+    height: 370px;
+    width: 350px;
+    border-radius: 3.8px;
+    box-shadow: 15px 15px 15px #757575;
+}
+
+.message {
+    color: #065F46;
+    background-color: #ECFDF5;
+    margin: 10px;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.pay-btn:disabled {
+    background-color: #757575;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
