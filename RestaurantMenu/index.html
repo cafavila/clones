@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <!-- Estilos Css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Restaurant Ordering App</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            <!--     <img src="./img/BurgerQueen.png" alt="Hamburger"/> -->
+                <h1>Jimmy’s Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </header>
+            <main>
+                <div id="menu">
+                </div>
+            </main>
+            <footer id="order" class="hidden">
+                <h3 class="order-tittle">Your Order</h3>
+                <ul id="order-list">
+                </ul>
+                <hr/>
+                <div class="total">
+                    <p>Total Price:</p>
+                    <p id="total-price">$ 0.-</p>
+                </div>
+                <button id="order-btn" class="order-btn">Complete Order</button>
+            </footer>
+            <div id="modal" class="modal hidden">
+                <h4>Enter card details</h4>
+                <form action="">
+                    <input type="text" id="card-name" placeholder="Enter your name" required>
+                    <input type="text" id="card-number" placeholder="Enter card name" required>
+                    <input type="text" id="card-cvv" placeholder="Enter CVV" required>
+                    <button id="pay-btn" class="order-btn" type="submit">Pay</button>
+                </form>
+            </div>
+            <div id="message" class="message hidden">
+                <p>Gracias! Su orden ya esta en camino!</p>
+            </div>
+        </div>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
