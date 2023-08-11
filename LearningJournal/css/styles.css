@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 59px;
+    padding: 2.5em;
+}
+
+footer {
+    height: 100px;
+    background-color: #202020;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 0.8rem;
+    color: #0E0E0E;
+    text-transform: uppercase;
+}
+
+article {
+    margin: 1.5em 0;
+}
+
+article img {
+    width: 100%;
+    max-width: 370px;
+}
+
+article h3 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0.3em 0;
+}
+
+article p {
+    font-size: 1rem;
+}
+
+.container {
+    width: 414px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.isologo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.logo-icon {
+    width: 23.5px;
+    height: 23.5px;
+}
+
+.brand {
+    color: #0E0E0E;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    background-image: url('../img/sunset-g70e58b399_640.jpg');
+    background-size: cover;
+    color: #FFFFFF;
+    height: 20em;
+    padding: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.hero h2 {
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.date {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.text-blog {
+    font-size: 1em;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.company-foot,
+.copy {
+    font-size: 0.8em;
+}
+
+.company-foot {
+    color: #ECECEC;
+    font-weight: 700;
+}
+
+.copy {
+    color: #D7D7D7;
+}
+
+.article-list {
+    padding: 1.2em;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+    article {
+        width: 300px;
+    }
+
+    article img {
+        height: 200px;
+        max-height: 250px;
+    }
+    .container {
+        width: 100%;
+        max-width: 1080px;
+    }
+    .article-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5em;
+    }
+    .text-blog {
+        max-width: 600px;
+    }
+}
